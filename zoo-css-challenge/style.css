@@ -178,6 +178,28 @@ footer {
   max-width: 400px;
 }
 
+.education-container button {
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #372772;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.education-container button:hover {
+  background-color: #6320ee;
+}
+
+.education-container button:active {
+  box-shadow: none;
+  transform: translateY(2px);
+  background-color: #9c208c;
+}
+
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;

@@ -110,6 +110,11 @@ footer {
 
 .image-container img:first-of-type {
   vertical-align: bottom;
+  border-color: #56e39f;
+}
+
+.image-container img:last-of-type {
+  border-color: #9c208c;
 }
 
 .tigers {

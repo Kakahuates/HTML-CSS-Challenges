@@ -132,6 +132,10 @@ footer {
   color: #f4743b;
 }
 
+.giraffe p:first-of-type {
+  font-size: 1.3rem;
+}
+
 .card {
   display: inline-block;
   background-color: white;

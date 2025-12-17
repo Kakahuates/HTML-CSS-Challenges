@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
 * {
   font-family: sans-serif;
   letter-spacing: 1px;
@@ -110,7 +111,12 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
+  border-color: #56e39f;
+}
+
+.image-container img:last-of-type {
+  border-color: #9c208c;
 }
 
 .tigers {
@@ -119,12 +125,17 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483c46;
+  color: #beee62;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe h2,
+.giraffe h3 {
+  color: #f4743b;
+}
+
+.giraffe p:first-of-type {
+  font-size: 1.3rem;
 }
 
 .card {
@@ -167,6 +178,29 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 16px;
+}
+
+.education-container button {
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #372772;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.education-container button:hover {
+  background-color: #6320ee;
+}
+
+.education-container button:active {
+  box-shadow: none;
+  transform: translateY(2px);
+  background-color: #9c208c;
 }
 
 .education-container h3,
@@ -193,4 +227,41 @@ footer {
 
 .programs .card {
   display: block;
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.programs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.zoo-visit {
+  background-color: #e0f7fa;
+}
+.zoo-visit h2,
+.zoo-visit h3 {
+  color: #00796b;
+}
+
+.container-zoo-visit {
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+}
+
+.zoo-visit h2,
+.zoo-visit p {
+  text-align: center;
+}
+
+.zoo-list li {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  margin: 10px 40px 0 0;
 }

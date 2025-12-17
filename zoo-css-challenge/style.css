@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
 * {
   font-family: sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.6;
 }
 
 header {
@@ -28,11 +31,11 @@ section {
   padding: 5%;
   background-color: #f8f0fb;
 }
-
+/*
 img {
   border: 5px solid #8075ff;
 }
-
+*/
 h1,
 h2,
 h3,
@@ -76,6 +79,8 @@ footer {
 }
 
 .introduction {
+	background-color: #ffffff;
+	text-align:  center;
 }
 
 #badge {
@@ -85,17 +90,21 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
+  z-index: 1000;
 
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+
+  transition: all 0.3s ease;
 }
 
 #badge:hover {
   background-color: yellow;
+  cursor: pointer;
 }
 
 #badge p {
@@ -109,7 +118,12 @@ footer {
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
+  border-color: #56e39f;
+}
+
+.image-container img:last-of-type {
+  border-color: #9c208c;
 }
 
 .tigers {
@@ -117,21 +131,47 @@ footer {
   color: #f0e100;
 }
 
-.giraffe {
-  background-color: #465775;
-  color: #56e39f;
+.tigers h2 {
+	color: #E6E6FA;
+	text-transform:  uppercase;
+	letter-spacing: 1px;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe {
+  background-color: #483c46;
+  color: #beee62;
+}
+
+.giraffe h2,
+.giraffe h3 {
+  color: #f4743b;
+}
+
+.giraffe p:first-of-type {
+  font-size: 1.3rem;
+}
+
+/*News*/
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.news h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .card {
-  display: inline-block;
+  /*display: inline-block;*/
+  flex: 1;
+  min-width: 250px;
+  max-width: 30%;
   background-color: white;
   padding: 20px;
-  margin: 10px;
-  width: 30%;
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -166,6 +206,29 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 16px;
+}
+
+.education-container button {
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: #372772;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.education-container button:hover {
+  background-color: #6320ee;
+}
+
+.education-container button:active {
+  box-shadow: none;
+  transform: translateY(2px);
+  background-color: #9c208c;
 }
 
 .education-container h3,
@@ -184,6 +247,13 @@ footer {
   color: #ff3f00;
 }
 
+.membership p {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
 .membership strong {
   color: #ff7f11;
 }
@@ -192,4 +262,41 @@ footer {
 
 .programs .card {
   display: block;
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.programs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.zoo-visit {
+  background-color: #e0f7fa;
+}
+.zoo-visit h2,
+.zoo-visit h3 {
+  color: #00796b;
+}
+
+.container-zoo-visit {
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+}
+
+.zoo-visit h2,
+.zoo-visit p {
+  text-align: center;
+}
+
+.zoo-list li {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  margin: 10px 40px 0 0;
 }
